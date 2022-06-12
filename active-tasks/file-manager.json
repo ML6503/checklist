@@ -4,11 +4,11 @@
   "criteria": [
     {
       "type": "title",
-      "title": "Dear evaluator.\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate."
+      "title": "Dear evaluator.\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate.\n"
     },
     {
       "type": "title",
-      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to deduct points, do not deduct."
+      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to deduct points, do not deduct.\n"
     },
     {
       "type": "title",
@@ -93,7 +93,7 @@
     },
     {
       "type": "title",
-      "text": "Operating system info (prints following information in console) implemented properly"      
+      "text": "Operating system info implemented properly" 
     },
     {
       "type": "subtask",
@@ -122,7 +122,7 @@
     },
     {
       "type": "title",
-      "text": "Hash calculation implemented properly"      
+      "text": "Hash calculation implemented properly"
     },
     {
       "type": "subtask",
@@ -131,7 +131,7 @@
     },
     {
       "type": "title",
-      "text": "Compress and decompress operations"      
+      "text": "Compress and decompress operations"
     },
     {
       "type": "subtask",

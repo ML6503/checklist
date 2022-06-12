@@ -6,14 +6,14 @@ export function render(criteria, taskName, information) {
   let done = 0;
 
   const checkMarks = [
-    'не выполнено',
-    'выполнено частично',
-    'выполнено полностью',
+    'not implemented',
+    'partial implementation',
+    'fully implemented',
   ];
-  const penaltiesMarks = ['нет', 'да'];
+  const penaltiesMarks = ['no', 'yes'];
   const askFeedback =
-    'Вы отметили: <em>выполнено частично</em>. Обязательно оставьте фидбек!';
-  const askChange = 'Вы изменили оценку. Возможно стоит изменить отзыв?';
+    'You marked: <em>Partial implementation</em>. Please leave feedback!';
+  const askChange = 'You\'ve changed your evaluation. May be you should change your feedback?';
 
   const feedback = document.querySelector('.feedback button');
   feedback.parentElement.classList.remove('hidden');
@@ -72,7 +72,7 @@ export function render(criteria, taskName, information) {
       el.querySelectorAll('input').forEach((input) => (input.checked = false));
       const form = el.querySelector('form');
       form && form.remove();
-      el.querySelector('.add-feedback').innerHTML = 'Добавить отзыв';
+      el.querySelector('.add-feedback').innerHTML = 'Leave feedback';
     });
     checkDone('reset');
     scoreboard.innerHTML = 0;
@@ -192,13 +192,13 @@ export function render(criteria, taskName, information) {
       const taskMaxScore = document.createElement('div');
       taskMaxScore.classList.add('task-max-score');
       const scoreDesc =
-        el.type == 'penalty' ? 'Штрафные баллы' : 'Балл за выполнение';
+        el.type == 'penalty' ? 'Penalty points' : 'Points for task';
       taskMaxScore.innerHTML = `<span>${scoreDesc}</span><p>${el.max}</p>`;
       const taskDesc = document.createElement('div');
       taskDesc.classList.add('task-description');
       taskDesc.innerHTML = `<p class='task-title'>${el.text}</p>`;
       taskDesc.innerHTML +=
-        "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Добавить отзыв</a>";
+        "<a class='add-feedback' href='#' onclick='addFeedback(event);'>Leave feedback</a>";
 
       const overlay = document.createElement('div');
       overlay.classList.add('overlay');
@@ -285,28 +285,29 @@ export function render(criteria, taskName, information) {
         });
         askLeaveFeedback(parent, askFeedback);
       }
-      content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вам необходимо оставить обязательный фидбек ко всем пунктам, где отмечено - <em>Выполнено частично</em>!</div></div>`;
+      content.innerHTML = `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>You need to leave feedback for all items marked as - <em>Partial implementation</em>!</div></div>`;
     } else {
       if (totalTasks !== done) {
-        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>Вы проверили не все пункты задания</div><div>Осталось ${
+        content.innerHTML += `<div style="display: flex; height: 100%; justify-content: center; flex-direction: column; text-align: center"><div>You have not checked all asigment items.</div><div>Remaining ${
           totalTasks - done
-        } из ${totalTasks}</div></div>`;
+        } from ${totalTasks}</div></div>`;
       } else {
         info.innerHTML =
-          '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Скопировать в буфер</a></div>';
+          '<div class="copy"><a href="#" onclick="copyToClipboard(event);">Copy to clipboard</a></div>';
         let resultList = filteredCriteria.filter(
           (item) => item && item.status != undefined
         );
-        let points = total % 10 > 1 && total % 10 <= 4 ? 'балла' : 'баллов';
-        content.innerHTML += `<p><strong>Ваша оценка - ${
+        // let points = total % 10 > 1 && total % 10 <= 4 ? 'point' : 'points';
+        let points = total === 1 ? 'point' : 'points';
+        content.innerHTML += `<p><strong>Your evaluation - ${
           total >= 0 ? total : 0
-        } ${points}</strong> \r\n</p><p>Отзыв по пунктам ТЗ:\r\n</p>`;
+        } ${points}</strong> \r\n</p><p>Assignment items feedback:\r\n</p>`;
 
         const resultDescriptions = {
-          0: 'Не выполненные/не засчитанные пункты:',
-          1: 'Частично выполненные пункты:',
-          2: 'Выполненные пункты:',
-          penalty: 'Штрафы:',
+          0: 'Not implemented / not credited points:',
+          1: 'Partially implemented points:',
+          2: 'Fully implemented points:',
+          penalty: 'Forfeit points:',
         };
         Object.keys(resultDescriptions).forEach((desc) => {
           let partialResult = [];
@@ -326,7 +327,7 @@ export function render(criteria, taskName, information) {
             partialResult.map((item, i) => {
               content.innerHTML += `<p>${i + 1}) ${item.text} \r\n${
                 item.feedback
-                  ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Отзыв: </strong>' +
+                  ? '<p style="background:#f1f1f1; font-style: italic; font-size: 11px; padding:5px"><strong>Feedback: </strong>' +
                     item.feedback +
                     '</p></p>'
                   : '</p>'
@@ -372,13 +373,13 @@ export function render(criteria, taskName, information) {
     box.appendChild(textarea);
 
     const closeText = document.createElement('a');
-    closeText.innerText = 'Отмена';
+    closeText.innerText = 'Cancel';
     closeText.onclick = () => {
       box.remove();
       resetRadioState(id);
     };
     const saveText = closeText.cloneNode();
-    saveText.innerText = 'Сохранить';
+    saveText.innerText = 'Save';
     saveText.onclick = () => {
       handleAreaEvent(id, textarea, link, box);
       checkFeedback(id);
@@ -419,7 +420,7 @@ export function render(criteria, taskName, information) {
       parent.querySelector('a').click();
       askLeaveFeedback(
         parent,
-        'Фидбек не может быть пустым! Минимальная длина 8 символов'
+        'Feedback field can not be empty! Minimum is 8 symbols length.'
       );
       setTimeout(() => askLeaveFeedback(parent, askFeedback), 3000);
       return;
@@ -457,11 +458,11 @@ export function render(criteria, taskName, information) {
     filteredCriteria[id].feedback = textarea.value;
     if (textarea.value) {
       link.classList.add('feedback-add');
-      link.innerHTML = 'Изменить отзыв';
+      link.innerHTML = 'Change feedback';
     } else {
       delete filteredCriteria[id].feedback;
       link.classList.remove('feedback-add');
-      link.innerHTML = 'Добавить отзыв';
+      link.innerHTML = 'Add feedback';
     }
     box.remove();
   }
@@ -469,10 +470,10 @@ export function render(criteria, taskName, information) {
   window.copyToClipboard = (e) => {
     e.preventDefault();
     e.target.classList.add('not-link');
-    e.target.innerText = 'Скопировано!';
+    e.target.innerText = 'Copied!';
     setTimeout(() => {
       e.target.classList.remove('not-link');
-      e.target.innerText = 'Скопировать в буфер';
+      e.target.innerText = 'Copy to clipboard';
     }, 1000);
     const el = document.createElement('textarea');
     el.value = toClipBoard;
