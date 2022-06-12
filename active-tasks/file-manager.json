@@ -168,12 +168,12 @@
     },
     {
       "type": "penalty",
-      "text": "Any external tools/libraries are used **-95% of total task score**",
+      "text": "Any external tools/libraries are used. Penalty is -95% of total task score.",
       "max": -304      
     },
     {
       "type": "penalty",
-      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.) **-30% of total task score**",
+      "text": "Commits after deadline (except commits that affect only 'Readme.md', '.gitignore', etc.). Penalty is -30% of total task score",
       "max": -96
     }
   ]
