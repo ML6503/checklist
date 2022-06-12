@@ -1,0 +1,154 @@
+{
+  "taskName": "node.js 2022Q20 #File Manager",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/file-manager/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Dear evaluator.\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate."
+    },
+    {
+      "type": "title",
+      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to withdraw points, do not withdraw"
+    },
+    {
+      "type": "title",
+      "title": "General"
+    },
+    {
+      "type": "subtask",
+      "text": "Application accepts username and prints proper message **+6**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Application exits if user pressed `ctrl+c` or sent `.exit` command and proper message is printed **+10**"      
+    },
+    {
+      "type": "title",
+      "title": "Operation fail"
+    },
+    {
+      "type": "subtask",
+      "text": "Attempts to perform an operation on a non-existent file or work on a non-existent path result in the operation fail **+20**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Operation fail doesn't crash application **+10**"      
+    },
+    {
+      "type": "title",
+      "title": "Navigation & working directory operations implemented properly"
+    },
+    {
+      "type": "subtask",
+      "text": "Go upper from current directory **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Go to dedicated folder from current directory **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "List all files and folders in current directory **+10**"      
+    },
+    {
+      "type": "title",
+      "title": "Basic operations with files implemented properly"
+    },
+    {
+      "type": "subtask",
+      "text": "Read file and print it's content in console **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Create empty file **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Rename file **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Copy file **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Move file **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Delete file **+10**"      
+    },
+    {
+      "type": "title",
+      "text": "Operating system info (prints following information in console) implemented properly"      
+    },
+    {
+      "type": "subtask",
+      "text": "Get EOL (default system End-Of-Line) **+6**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Get host machine CPUs info (overall amount of CPUS plus model and clock rate (in GHz) for each of them) **+10**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Get home directory **+6**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Get current *system user name* (Do not confuse with the username that is set when the application starts) **+6**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Get CPU architecture for which Node.js binary has compiled **+6**"      
+    },
+    {
+      "type": "title",
+      "text": "Hash calculation implemented properly"      
+    },
+    {
+      "type": "subtask",
+      "text": "Calculate hash for file Decompress file (using Brotli algorithm) **+20**"      
+    },
+    {
+      "type": "title",
+      "text": "Compress and decompress operations"      
+    },
+    {
+      "type": "subtask",
+      "text": "Compress file (using Brotli algorithm) **+20**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Decompress file (using Brotli algorithm) **+20**"      
+    },
+    {
+      "type": "title",
+      "text": "Advanced Scope"      
+    },
+    {
+      "type": "subtask",
+      "text": "All files operations with reading/writing should be performed using Streams API **+50**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Codebase is written in ESM modules instead of CommonJS **+20**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Codebase is separated (at least 7 modules) **+20**"      
+    },
+    {
+      "type": "title",
+      "text": "Forfeits"      
+    },
+    {
+      "type": "subtask",
+      "text": "Any external tools/libraries are used **-95% of total task score**"      
+    },
+    {
+      "type": "subtask",
+      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.) **-30% of total task score**"      
+    }
+  ]
+}
