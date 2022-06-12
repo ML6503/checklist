@@ -4,7 +4,7 @@
   "criteria": [
     {
       "type": "title",
-      "title": "Dear evaluator.\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate.\n"
+      "title": "Dear Evaluator,\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate.\n"
     },
     {
       "type": "title",
