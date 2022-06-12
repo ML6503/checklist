@@ -542,7 +542,7 @@ label:hover {
 }
 
 .task-max-score {
-  width: 65px;
+  width: 80px;
   margin: 10px 10px 10px 0;
   border: 1px solid #ccc;
   display: flex;

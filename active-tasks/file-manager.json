@@ -93,7 +93,7 @@
     },
     {
       "type": "title",
-      "text": "Operating system info implemented properly" 
+      "title": "Operating system info (prints following information in console) implemented properly" 
     },
     {
       "type": "subtask",
@@ -122,7 +122,7 @@
     },
     {
       "type": "title",
-      "text": "Hash calculation implemented properly"
+      "title": "Hash calculation implemented properly"
     },
     {
       "type": "subtask",
@@ -131,7 +131,7 @@
     },
     {
       "type": "title",
-      "text": "Compress and decompress operations"
+      "title": "Compress and decompress operations"
     },
     {
       "type": "subtask",
@@ -145,7 +145,7 @@
     },
     {
       "type": "title",
-      "text": "Advanced Scope"      
+      "title": "Advanced Scope"      
     },
     {
       "type": "subtask",
@@ -164,7 +164,7 @@
     },
     {
       "type": "title",
-      "text": "Forfeits"      
+      "title": "Forfeits"      
     },
     {
       "type": "penalty",
