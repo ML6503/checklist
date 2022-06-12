@@ -8,7 +8,7 @@
     },
     {
       "type": "title",
-      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to withdraw points, do not withdraw"
+      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to deduct points, do not deduct."
     },
     {
       "type": "title",
@@ -16,11 +16,13 @@
     },
     {
       "type": "subtask",
-      "text": "Application accepts username and prints proper message **+6**"      
+      "text": "Application accepts username and prints proper message",
+      "max": 6      
     },
     {
       "type": "subtask",
-      "text": "Application exits if user pressed `ctrl+c` or sent `.exit` command and proper message is printed **+10**"      
+      "text": "Application exits if user pressed `ctrl+c` or sent `.exit` command and proper message is printed",     
+      "max": 10 
     },
     {
       "type": "title",
@@ -28,11 +30,13 @@
     },
     {
       "type": "subtask",
-      "text": "Attempts to perform an operation on a non-existent file or work on a non-existent path result in the operation fail **+20**"      
+      "text": "Attempts to perform an operation on a non-existent file or work on a non-existent path result in the operation fail",
+      "max": 20
     },
     {
       "type": "subtask",
-      "text": "Operation fail doesn't crash application **+10**"      
+      "text": "Operation fail doesn't crash application",
+      "max": 10     
     },
     {
       "type": "title",
@@ -40,15 +44,18 @@
     },
     {
       "type": "subtask",
-      "text": "Go upper from current directory **+10**"      
+      "text": "Go upper from current directory",
+      "max": 10           
     },
     {
       "type": "subtask",
-      "text": "Go to dedicated folder from current directory **+10**"      
+      "text": "Go to dedicated folder from current directory",
+      "max": 10           
     },
     {
       "type": "subtask",
-      "text": "List all files and folders in current directory **+10**"      
+      "text": "List all files and folders in current directory",
+      "max": 10           
     },
     {
       "type": "title",
@@ -56,27 +63,33 @@
     },
     {
       "type": "subtask",
-      "text": "Read file and print it's content in console **+10**"      
+      "text": "Read file and print it's content in console",
+      "max": 10      
     },
     {
       "type": "subtask",
-      "text": "Create empty file **+10**"      
+      "text": "Create empty file" ,
+      "max": 10          
     },
     {
       "type": "subtask",
-      "text": "Rename file **+10**"      
+      "text": "Rename file",
+      "max": 10           
     },
     {
       "type": "subtask",
-      "text": "Copy file **+10**"      
+      "text": "Copy file",
+      "max": 10           
     },
     {
       "type": "subtask",
-      "text": "Move file **+10**"      
+      "text": "Move file",
+      "max": 10           
     },
     {
       "type": "subtask",
-      "text": "Delete file **+10**"      
+      "text": "Delete file",
+      "max": 10           
     },
     {
       "type": "title",
@@ -84,23 +97,28 @@
     },
     {
       "type": "subtask",
-      "text": "Get EOL (default system End-Of-Line) **+6**"      
+      "text": "Get EOL (default system End-Of-Line)",
+      "max": 6         
     },
     {
       "type": "subtask",
-      "text": "Get host machine CPUs info (overall amount of CPUS plus model and clock rate (in GHz) for each of them) **+10**"      
+      "text": "Get host machine CPUs info (overall amount of CPUS plus model and clock rate (in GHz) for each of them)" ,
+      "max": 10          
     },
     {
       "type": "subtask",
-      "text": "Get home directory **+6**"      
+      "text": "Get home directory",
+      "max": 6         
     },
     {
       "type": "subtask",
-      "text": "Get current *system user name* (Do not confuse with the username that is set when the application starts) **+6**"      
+      "text": "Get current *system user name* (Do not confuse with the username that is set when the application starts)",
+      "max": 6               
     },
     {
       "type": "subtask",
-      "text": "Get CPU architecture for which Node.js binary has compiled **+6**"      
+      "text": "Get CPU architecture for which Node.js binary has compiled",
+      "max": 6               
     },
     {
       "type": "title",
@@ -108,7 +126,8 @@
     },
     {
       "type": "subtask",
-      "text": "Calculate hash for file Decompress file (using Brotli algorithm) **+20**"      
+      "text": "Calculate hash for file Decompress file (using Brotli algorithm)",
+      "max": 20      
     },
     {
       "type": "title",
@@ -116,11 +135,13 @@
     },
     {
       "type": "subtask",
-      "text": "Compress file (using Brotli algorithm) **+20**"      
+      "text": "Compress file (using Brotli algorithm)",
+      "max": 20            
     },
     {
       "type": "subtask",
-      "text": "Decompress file (using Brotli algorithm) **+20**"      
+      "text": "Decompress file (using Brotli algorithm)",
+      "max": 20                  
     },
     {
       "type": "title",
@@ -128,27 +149,32 @@
     },
     {
       "type": "subtask",
-      "text": "All files operations with reading/writing should be performed using Streams API **+50**"      
+      "text": "All files operations with reading/writing should be performed using Streams API",
+      "max": 50                 
     },
     {
       "type": "subtask",
-      "text": "Codebase is written in ESM modules instead of CommonJS **+20**"      
+      "text": "Codebase is written in ESM modules instead of CommonJS",
+      "max": 20                  
     },
     {
       "type": "subtask",
-      "text": "Codebase is separated (at least 7 modules) **+20**"      
+      "text": "Codebase is separated (at least 7 modules)",
+      "max": 20                  
     },
     {
       "type": "title",
       "text": "Forfeits"      
     },
     {
-      "type": "subtask",
-      "text": "Any external tools/libraries are used **-95% of total task score**"      
+      "type": "penalty",
+      "text": "Any external tools/libraries are used **-95% of total task score**",
+      "max": -304      
     },
     {
-      "type": "subtask",
-      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.) **-30% of total task score**"      
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only `Readme.md`, `.gitignore`, etc.) **-30% of total task score**",
+      "max": -96
     }
   ]
 }
