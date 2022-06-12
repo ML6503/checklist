@@ -126,7 +126,7 @@
     },
     {
       "type": "subtask",
-      "text": "Calculate hash for file Decompress file (using Brotli algorithm)",
+      "text": "Calculate hash for file and print it into console",
       "max": 20      
     },
     {
