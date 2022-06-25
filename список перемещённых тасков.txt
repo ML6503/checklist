@@ -1,1 +1,1 @@
-https://nodejs-2022q2--borntoride.netlify.app/ - file-manager
+https://nodejs-2022q2--borntoride.netlify.app/ - file-manager, crud-api, remote-control
