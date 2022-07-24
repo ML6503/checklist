@@ -31,6 +31,11 @@
     },
     {
       "type": "subtask",
+      "text": "Access Token is implemented,JWT payload contains userId and login, secret key is saved in .env.",     
+      "max": 20
+    },
+    {
+      "type": "subtask",
       "text": "Authentication is required for the access to all routes except /auth/signup, /auth/login, /doc and /.",     
       "max": 40
     },
