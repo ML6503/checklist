@@ -164,7 +164,7 @@
     {
       "type": "penalty",
       "text": "Commits after deadline (except commits that affect only 'Readme.md', '.gitignore', etc.). Penalty is -30% of total task score",
-      "max": -84
+      "max": -279
     },
     {
       "type": "penalty",
