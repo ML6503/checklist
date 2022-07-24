@@ -52,45 +52,11 @@
       "type": "subtask",
       "text": "+10 For each successfully passed test. If not all tests have been passed, please put 0 and calculate sum to add on top of the total and put information on tests number in feedback",     
       "max": 660 
-    },
-    {
-      "type": "title",
-      "title": "Containerization, Docker"
-    },
-
-    {
-      "type": "subtask",
-      "text": "Readme.md has instruction how to run application",     
-      "max": 20
-    },
-    {
-      "type": "subtask",
-      "text": "user-defined bridge is created and configured",     
-      "max": 30 
-    },
-    {
-      "type": "subtask",
-      "text": "container auto restart after crash",     
-      "max": 30
-    },
-    {
-      "type": "subtask",
-      "text": "application is restarting upon changes implemented into src folder",     
-      "max": 20
-    },
-    {
-      "type": "subtask",
-      "text": "database files and logs to be stored in volumes instead of container",     
-      "max": 30
-    },   
+    }, 
     {
       "type": "title",
       "title": "Advanced Scope"
-    },
-    {
-      "type": "title",
-      "title": "REST Service"
-    },
+    },   
     {
       "type": "subtask",
       "text": "PORT value is stored into .env file",
@@ -100,26 +66,7 @@
       "type": "subtask",
       "text": "OpenAPI spec in doc folder corresponds with assignment",
       "max": 20     
-    },
-    {
-      "type": "title",
-      "title": "Containerization, Docker"
-    },
-    {
-      "type": "subtask",
-      "text": "Final size of the Docker image with application is less than 500 MB",
-      "max": 20     
-    },
-    {
-      "type": "subtask",
-      "text": "Implemented npm script for vulnerabilities scanning (free solution)",
-      "max": 10
-    },
-    {
-      "type": "subtask",
-      "text": "Your built image is pushed to DockerHub",
-      "max": 20     
-    },  
+    }, 
     {
       "type": "title",
       "title": "Forfeits"      
@@ -137,34 +84,11 @@
       "type": "penalty",
       "text": "Less than 3 commits in the development branch, not including commits that make changes only to Readme.md or similar files (tsconfig.json, .gitignore, .prettierrc.json, etc.)",
       "max": -20
-    },
-    {
-      "type": "title",
-      "title": "Containerization, Docker"      
-    },
-    {
-      "type": "penalty",
-      "text": "In case specific image is not used (it is required to use images like postgres and node, but not ubuntu with installation of node or postgres)",
-      "max": -20     
-    },
-    {
-      "type": "penalty",
-      "text": "Postgres container is not configured as dependency for application container",
-      "max": -20     
-    },
-    {
-      "type": "penalty",
-      "text": "docker-compose.yml contains hardcoded variables",
-      "max": -20     
-    },
-    {
-      "type": "title",
-      "title": "Common forfeits for both: REST Service and Containerization, Docker"      
-    },
+    }, 
     {
       "type": "penalty",
       "text": "Commits after deadline (except commits that affect only 'Readme.md', '.gitignore', etc.). Penalty is -30% of total task score",
-      "max": -279
+      "max": -225
     },
     {
       "type": "penalty",
