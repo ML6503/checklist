@@ -50,7 +50,7 @@
     },
     {
       "type": "subtask",
-      "text": "+10 For each successfully passed test",     
+      "text": "+10 For each successfully passed test. If not all tests have been passed, please put 0 and calculate sum to add on top of the total and put information on tests number in feedback",     
       "max": 660 
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "type": "penalty",
-      "text": "Changes in tests",
+      "text": "Changes in tests.",
       "max": -660     
     },
     {
