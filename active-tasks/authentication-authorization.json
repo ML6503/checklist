@@ -1,0 +1,76 @@
+{
+  "taskName": "Node.js 2022Q20 #Authentication and Authorization",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/rest-service/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Dear Evaluator,\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate.\n"
+    },
+    {
+      "type": "title",
+      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to deduct points, do not deduct.\n"
+    },
+    {
+      "type": "title",
+      "title": "Basic Scope"
+    },   
+    {
+      "type": "subtask",
+      "text": "Route /auth/signup implemented correctly, related logic is divided between controller and corresponding service",     
+      "max": 30
+    },
+    {
+      "type": "subtask",
+      "text": "Route /auth/login has been implemented, related logic is divided between controller and corresponding service",     
+      "max": 30 
+    },
+    {
+      "type": "subtask",
+      "text": "User password saved into database as hash",     
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Authentication is required for the access to all routes except /auth/signup, /auth/login, /doc and /.",     
+      "max": 40
+    },
+    {
+      "type": "subtask",
+      "text": "Separate module is implemented within application scope to check that all requests to all routes except mentioned above contain required JWT token",     
+      "max": 10
+    },   
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },   
+    {
+      "type": "subtask",
+      "text": "Route /auth/refresh implemented correctly, related logic is divided between controller and corresponding service.",
+      "max": 30     
+    },
+    {
+      "type": "title",
+      "title": "Forfeits"      
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only 'Readme.md', '.gitignore', etc.). Penalty is -30% of total task score",
+      "max": -51
+    },
+    {
+      "type": "penalty",
+      "text": "No separate development branch",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Pull Request is missing or its description is incorrect",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "Less than 3 commits in the development branch, not including commits that make changes only to Readme.md or similar files (tsconfig.json, .gitignore, .prettierrc.json, etc.)",
+      "max": -20
+    }
+  ]
+}
