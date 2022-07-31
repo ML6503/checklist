@@ -1,0 +1,111 @@
+{
+  "taskName": "Node.js 2022Q20 #Logging & Error Handling",
+  "github": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/logging-error-handling/assignment.md",
+  "criteria": [
+    {
+      "type": "title",
+      "title": "Dear Evaluator,\nYou are to check only requirements listed in the assignment.\nIf any issue is not covered by assignment requirements, then neither should you check it nore evaluate.\n"
+    },
+    {
+      "type": "title",
+      "title": "All doubts are interpreted in favor of the student.\nIf you have doubts, whether or not to deduct points, do not deduct.\n"
+    },
+    {
+      "type": "title",
+      "title": "Basic Scope"
+    },   
+    {
+      "type": "subtask",
+      "text": "Custom LoggingService is implemented and used for logging",     
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Custom Exception Filter is implemented and used for handling exceptions during request processing",     
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Logging for request (of at least url, query parameters, body) and response with status code is implemented.",     
+      "max": 20 
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling is implemented including sending response with an appropriate http status code and errors logging.",     
+      "max": 20
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling and logging is implemented for uncaughtException event.",     
+      "max": 10
+    },
+    {
+      "type": "subtask",
+      "text": "Error handling and logging is implemented for unhandledRejection event.",     
+      "max": 10
+    }, 
+    {
+      "type": "title",
+      "title": "Advanced Scope"
+    },   
+    {
+      "type": "subtask",
+      "text": "Logs are written to a file.",
+      "max": 20     
+    },
+    {
+      "type": "subtask",
+      "text": "Logs files are rotated with size.",
+      "max": 10     
+    },
+    {
+      "type": "subtask",
+      "text": "Add environment variable to specify max file size.",
+      "max": 10     
+    },
+    {
+      "type": "subtask",
+      "text": "Error logs are written to a separate file (either only to a separate file or in addition to logging into a common file).",
+      "max": 10     
+    },
+    {    
+      "type": "subtask",
+      "text": "Add environment variable to specify logging level and corresponding functionality. Logs with configured level to be registered as well as other higher priority levels. For example if you set level 2, all messages with levels 0, 1 and 2 should be logged. You should use Nest.js logging levels.",
+      "max": 20     
+    },
+    {
+      "type": "title",
+      "title": "Forfeits"      
+    },
+    {
+      "type": "penalty",
+      "text": "Commits after deadline (except commits that affect only 'Readme.md', '.gitignore', etc.). Penalty is -30% of total task score",
+      "max": -51
+    },
+    {
+      "type": "penalty",
+      "text": "Missing PR or its description is incorrect",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "No separate development branch",
+      "max": -20
+    },   
+    {
+      "type": "penalty",
+      "text": "Less than 3 commits in the development branch, not including commits that make changes only to Readme.md or similar files (tsconfig.json, .gitignore, .prettierrc.json, etc.)",
+      "max": -20
+    },
+    {
+      "type": "penalty",
+      "text": "-10 points for each failed test. If part of tests fails then put 0 and sum up manually for this forfeit point.",
+      "max": -660
+    },
+    {
+      "type": "penalty",
+      "text": "-10 points for each lint error either on npm run lint on the basis of the local config or for compilation errors on the basis of the local tsconfig (errors not warnings). If more than one, put 0 and sum up manually.",
+      "max": -10
+    }
+  ]
+}
